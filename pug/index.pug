@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title test
+    meta(name="description" content="")
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js')
+    script(src='https://unpkg.com/axios/dist/axios.min.js')
+    script(src='array.js')
+    script(src='pagejs.js')
+  body
+    #app
+      .serchbar
+        input(type='text' v-model='searchWord')
+        div.search(@click='SearchSong()')
+          p Search
+      .songlist
+        .list(v-for='song in showSongArray')
+          .dateword(v-if="get(song, 'showDate')")
+            p {{get(song, 'date')}}
+          .song
+            a(:href="get(song, 'songLink')" target='_blank')
+              p
+                span {{get(song, 'songName')}}
+    link(rel='stylesheet' href='style.css')

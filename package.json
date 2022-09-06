@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build": "node_modules/.bin/pug pug -o ./"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}

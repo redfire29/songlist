@@ -1,0 +1,45 @@
+body {
+  background: #393f49;
+  color: #35a56f;
+  padding: 10px;
+}
+input {
+  padding: 10px;
+}
+p {
+  margin: 0px;
+}
+.search {
+  border: 1px solid #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+.search p {
+  margin: 0px;
+}
+.songlist .list .dateword {
+  background: #ad9cd1;
+  color: #261d38;
+  padding: 5px;
+  font-size: 22px;
+}
+ul {
+  padding-inline-start: 0;
+}
+ul li {
+  list-style-type: none;
+  padding: 0;
+}
+.song {
+  background: #302644;
+  padding: 10px 10px 10px 20px;
+}
+.song a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.list:nth-child(odd) .song {
+  background: #574281;
+}
